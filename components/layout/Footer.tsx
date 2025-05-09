@@ -1,14 +1,16 @@
+"use client"
+
 import Link from 'next/link'
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const navigation = {
   solutions: [
-    { name: 'MBBS in Uzbekistan', href: '/universities/uzbekistan' },
-    { name: 'MBBS in Russia', href: '/universities/russia' },
-    { name: 'MBBS in Kyrgyzstan', href: '/universities/kyrgyzstan' },
-    { name: 'MBBS in Kazakhstan', href: '/universities/kazakhstan' },
-    { name: 'MBBS in Georgia', href: '/universities/georgia' },
+    { name: 'MBBS in Uzbekistan', href: '/#countries' },
+    { name: 'MBBS in Russia', href: '/#countries' },
+    { name: 'MBBS in Kyrgyzstan', href: '/#countries' },
+    { name: 'MBBS in Kazakhstan', href: '/#countries' },
+    { name: 'MBBS in Georgia', href: '/#countries' },
   ],
   support: [
     { name: 'Admission Process', href: '/services#admission-process' },
@@ -38,6 +40,16 @@ const navigation = {
 }
 
 export default function Footer() {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('/#')) {
+      e.preventDefault()
+      const element = document.querySelector(href.substring(1))
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+
   return (
     <footer className="bg-gray-900 text-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">Footer</h2>
@@ -70,7 +82,11 @@ export default function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link 
+                        href={item.href} 
+                        className="text-sm leading-6 text-gray-300 hover:text-white"
+                        onClick={(e) => handleNavClick(e, item.href)}
+                      >
                         {item.name}
                       </Link>
                     </li>
@@ -107,10 +123,18 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Contact Us</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li>
+                    <div className="flex items-start">
+                      <MapPin className="h-5 w-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" />
+                      <span className="text-sm leading-6 text-gray-300">
+                        123 Education Street, New Delhi, India
+                      </span>
+                    </div>
+                  </li>
+                  <li>
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
                       <Link href="tel:+911234567890" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        +91 9250800725
+                        +91 1234 567 890
                       </Link>
                     </div>
                   </li>

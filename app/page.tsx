@@ -52,11 +52,12 @@ export default function Home() {
             </div>
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 flex justify-center animate-fadeIn">
               <Image 
-                src="https://images.pexels.com/photos/8376312/pexels-photo-8376312.jpeg"
-                alt="Medical students"
+                src="/hero-image.png"
+                alt="Med Pathway - MBBS Abroad Consultancy"
                 width={600}
                 height={500}
                 className="rounded-xl shadow-2xl"
+                priority
               />
             </div>
           </div>
