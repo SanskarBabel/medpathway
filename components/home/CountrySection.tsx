@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 const countries = [
   {
     name: 'Uzbekistan',
-    image: '/images/tashkent-uzbekistan.jpg',
+    image: 'https://4traveler.me/sites/default/files/travel/catalog/tashkent_hotel_history_kat_0.jpg',
     description: 'Quality medical education with modern facilities and experienced faculty.',
     universities: 8,
   },
@@ -16,13 +16,13 @@ const countries = [
   },
   {
     name: 'Kyrgyzstan',
-    image: '/images/kyrgyzstan-valley.jpg',
+    image: 'https://ik.imagekit.io/syustaging/SYU_PREPROD/Cover-image_jZUGQAoKss.webp?tr=w-3840',
     description: 'Affordable medical education with English medium instruction and practical approach.',
     universities: 10,
   },
   {
     name: 'Kazakhstan',
-    image: '/images/kazakhstan.webp',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Nazarbayev_University.JPG/1280px-Nazarbayev_University.JPG',
     description: 'Modern medical universities with advanced infrastructure and research opportunities.',
     universities: 7,
   },
