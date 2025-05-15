@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 flex justify-center animate-fadeIn">
               <Image 
-                src="https://sdmntprwestus.oaiusercontent.com/files/00000000-5da8-6230-86cb-658e1d54cecb/raw?se=2025-05-15T21%3A31%3A53Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=b64a43d9-3512-45c2-98b4-dea55d094240&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-15T21%3A20%3A45Z&ske=2025-05-16T21%3A20%3A45Z&sks=b&skv=2024-08-04&sig=X%2Bp7Y%2BBaZspcOXcAy4x1O%2BAmVCHOkWVxqD1HHzhukAM%3D"
+                src="https://i.im.ge/2025/05/16/v8vd39.image.png"
                 alt="Med Pathway - MBBS Abroad Consultancy"
                 width={600}
                 height={500}
