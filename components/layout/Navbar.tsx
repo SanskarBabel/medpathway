@@ -22,7 +22,7 @@ const navigation = [
   },
   { name: 'Services', href: '/#services' },
   { name: 'FAQ', href: '/#faq' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact', href: 'https://wa.me/9250800725?text=Hi%20Med%20Pathway,%20I%27m%20interested%20in%20MBBS%20abroad.' },
 ]
 
 export default function Navbar() {
@@ -52,6 +52,10 @@ export default function Navbar() {
         element.scrollIntoView({ behavior: 'smooth' })
         setMobileMenuOpen(false)
       }
+    } else if (href.startsWith('https://wa.me')) {
+      e.preventDefault()
+      window.open(href, '_blank')
+      setMobileMenuOpen(false)
     }
   }
 
@@ -122,6 +126,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                target={item.href.startsWith('https://wa.me') ? '_blank' : undefined}
               >
                 {item.name}
               </Link>
@@ -194,6 +199,7 @@ export default function Navbar() {
                             handleNavClick(e, item.href)
                             setMobileMenuOpen(false)
                           }}
+                          target={item.href.startsWith('https://wa.me') ? '_blank' : undefined}
                         >
                           {item.name}
                         </Link>

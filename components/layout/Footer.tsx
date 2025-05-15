@@ -23,7 +23,6 @@ const navigation = {
     { name: 'About Us', href: '/#why-choose-us' },
     { name: 'Success Stories', href: '/#testimonials' },
     { name: 'FaQ', href: '/#faq' },
-    { name: 'Blog', href: '/blog' },
   ],
   legal: [
     { name: 'Privacy Policy', href: '/privacy-policy' },
