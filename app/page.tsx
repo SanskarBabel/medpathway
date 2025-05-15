@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 flex justify-center animate-fadeIn">
               <Image 
-                src="/hero-image.JPG"
+                src="/hero-image.jpg"
                 alt="Med Pathway - MBBS Abroad Consultancy"
                 width={600}
                 height={500}
