@@ -29,10 +29,6 @@ const navigation = {
     { name: 'Terms of Service', href: '/terms-of-service' },
     { name: 'Refund Policy', href: '/refund-policy' },
   ],
-  social: [
-    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/med_pathway' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-  ],
 }
 
 export default function Footer() {
@@ -58,18 +54,6 @@ export default function Footer() {
             <p className="text-sm leading-6 text-gray-300">
               Helping aspiring doctors secure hassle-free admissions in top medical universities abroad with affordable, transparent, and reliable guidance.
             </p>
-            <div className="flex space-x-3">
-              {navigation.social.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="rounded-md bg-gray-800 p-2 text-gray-400 hover:text-white"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-5 w-5" aria-hidden="true" />
-                </Link>
-              ))}
-            </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -125,11 +109,27 @@ export default function Footer() {
                       </span>
                     </div>
                   </li>
+                  {/* <li>
+                    <div className="flex items-center">
+                      <Phone className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
+                      <span  className="text-sm leading-6 text-gray-300 hover:text-white">
+                        +99 8931303901
+                      </span>
+                    </div>
+                  </li> */}
                   <li>
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
                       <Link href="mailto:info@medpathway.com" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        info@medpathway.com
+                        medpathway.educational@gmail.com
+                      </Link>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="flex items-center">
+                      < Instagram className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
+                      <Link href="https://www.instagram.com/med_pathway/profilecard/?igsh=MWRyNHlnNm5ncGtidw=="  className="text-sm leading-6 text-gray-300 hover:text-white">
+                        MedPathway
                       </Link>
                     </div>
                   </li>
