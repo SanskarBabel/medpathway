@@ -1,7 +1,7 @@
 "use client"
 
 import Link from 'next/link'
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
+import { Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const navigation = {
@@ -20,10 +20,9 @@ const navigation = {
     { name: 'Post-Arrival Support', href: '/services#post-arrival' },
   ],
   company: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Our Team', href: '/about#team' },
-    { name: 'Success Stories', href: '/testimonials' },
-    { name: 'Career', href: '/career' },
+    { name: 'About Us', href: '/#why-choose-us' },
+    { name: 'Success Stories', href: '/#testimonials' },
+    { name: 'FaQ', href: '/#faq' },
     { name: 'Blog', href: '/blog' },
   ],
   legal: [
@@ -32,10 +31,8 @@ const navigation = {
     { name: 'Refund Policy', href: '/refund-policy' },
   ],
   social: [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/med_pathway' },
     { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
   ],
 }
 
@@ -97,10 +94,9 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Services</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 text-gray-300 hover:text-white">
+                    <li key={item.name} className="text-sm leading-6 text-gray-300" >
                         {item.name}
-                      </Link>
+                      
                     </li>
                   ))}
                 </ul>
@@ -123,19 +119,11 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">Contact Us</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   <li>
-                    <div className="flex items-start">
-                      <MapPin className="h-5 w-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" />
-                      <span className="text-sm leading-6 text-gray-300">
-                        123 Education Street, New Delhi, India
-                      </span>
-                    </div>
-                  </li>
-                  <li>
                     <div className="flex items-center">
                       <Phone className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
-                      <Link href="tel:+911234567890" className="text-sm leading-6 text-gray-300 hover:text-white">
-                        +91 1234 567 890
-                      </Link>
+                      <span  className="text-sm leading-6 text-gray-300 hover:text-white">
+                        +91 9250800725
+                      </span>
                     </div>
                   </li>
                   <li>
@@ -153,29 +141,6 @@ export default function Footer() {
         </div>
         
         <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="lg:flex lg:items-center lg:justify-between">
-            <div>
-              <h3 className="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
-              <p className="mt-2 text-sm leading-6 text-gray-300">
-                Get the latest updates on MBBS admissions, scholarships, and more.
-              </p>
-            </div>
-            <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
-              <label htmlFor="email-address" className="sr-only">Email address</label>
-              <input
-                type="email"
-                name="email-address"
-                id="email-address"
-                autoComplete="email"
-                required
-                className="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:w-64 sm:text-sm sm:leading-6"
-                placeholder="Enter your email"
-              />
-              <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                <Button type="submit">Subscribe</Button>
-              </div>
-            </form>
-          </div>
           <p className="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
             &copy; {new Date().getFullYear()} Med Pathway. All rights reserved.
           </p>

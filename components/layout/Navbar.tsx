@@ -13,15 +13,15 @@ const navigation = [
     name: 'Universities', 
     href: '#',
     submenu: [
-      { name: 'Uzbekistan', href: '/universities/uzbekistan' },
-      { name: 'Russia', href: '/universities/russia' },
-      { name: 'Kyrgyzstan', href: '/universities/kyrgyzstan' },
-      { name: 'Kazakhstan', href: '/universities/kazakhstan' },
-      { name: 'Georgia', href: '/universities/georgia' },
+      { name: 'Uzbekistan', href: '/#countries' },
+      { name: 'Russia', href: '/#countries' },
+      { name: 'Kyrgyzstan', href: '/#countries' },
+      { name: 'Kazakhstan', href: '/#countries' },
+      { name: 'Georgia', href: '/#countries' },
     ]
   },
-  { name: 'Services', href: '/services' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'Services', href: '/#services' },
+  { name: 'FAQ', href: '/#faq' },
   { name: 'Contact', href: '/contact' },
 ]
 

@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 flex justify-center animate-fadeIn">
               <Image 
-                src="/hero-image.png"
+                src="/hero-image.jpg"
                 alt="Med Pathway - MBBS Abroad Consultancy"
                 width={600}
                 height={500}
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 md:py-24 bg-white dark:bg-gray-900">
+      <section id='services' className="py-16 md:py-24 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
