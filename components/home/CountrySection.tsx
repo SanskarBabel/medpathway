@@ -22,7 +22,7 @@ const countries = [
   },
   {
     name: 'Kazakhstan',
-    image: '/medpathway/images/kazakhstan.webp"',
+    image: '/images/kazakhstan.webp',
     description: 'Modern medical universities with advanced infrastructure and research opportunities.',
     universities: 7,
   },
