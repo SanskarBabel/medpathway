@@ -17,7 +17,7 @@ export default function WhatsAppButton() {
   
   const handleClick = () => {
     // Replace with your actual WhatsApp number
-    window.open('https://wa.me/9250800725?text=Hi%20Med%20Pathway,%20I%27m%20interested%20in%20MBBS%20abroad.', '_blank')
+    window.open('https://wa.me/+919250800725?text=Hi%20Med%20Pathway,%20I%27m%20interested%20in%20MBBS%20abroad.', '_blank')
   }
   
   return (

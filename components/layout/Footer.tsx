@@ -128,7 +128,7 @@ export default function Footer() {
                   <li>
                     <div className="flex items-center">
                       < Instagram className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
-                      <Link href="https://www.instagram.com/med_pathway/profilecard/?igsh=MWRyNHlnNm5ncGtidw=="  className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Link href="https://www.instagram.com/_med_pathway_"  className="text-sm leading-6 text-gray-300 hover:text-white">
                         MedPathway
                       </Link>
                     </div>
