@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -72,6 +73,13 @@ export default function Navbar() {
     )}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
         <Link href="/" className="flex lg:flex-1 items-center gap-2">
+          <Image 
+            src="/logo.png" 
+            alt="Med Pathway Logo" 
+            width={40} 
+            height={40} 
+            className="rounded-full"
+          />
           <span className="text-primary text-2xl font-bold font-poppins">Med<span className="text-foreground">Pathway</span></span>
         </Link>
         
@@ -145,7 +153,14 @@ export default function Navbar() {
           <div className="fixed inset-0 bg-black/25" onClick={() => setMobileMenuOpen(false)} />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+                <Image 
+                  src="/logo.png" 
+                  alt="Med Pathway Logo" 
+                  width={32} 
+                  height={32} 
+                  className="rounded-full"
+                />
                 <span className="text-primary text-xl font-bold font-poppins">Med<span className="text-foreground">Pathway</span></span>
               </Link>
               <button
