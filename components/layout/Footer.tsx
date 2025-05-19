@@ -109,14 +109,15 @@ export default function Footer() {
                       </span>
                     </div>
                   </li>
-                  {/* <li>
-                    <div className="flex items-center">
-                      <Phone className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
-                      <span  className="text-sm leading-6 text-gray-300 hover:text-white">
-                        +99 8931303901
+                  <li>
+                    <div className="flex items-start">
+                      <MapPin className="h-5 w-5 text-gray-400 mt-0.5 mr-2 flex-shrink-0" />
+                      <span className="text-sm leading-6 text-gray-300 hover:text-white w-full">
+                        3/663 LIG Beside Arora Market, Near Ramleela park , Jhunsi Pragagraj <br />
+                        Pin Code - 211019
                       </span>
                     </div>
-                  </li> */}
+                  </li>
                   <li>
                     <div className="flex items-center">
                       <Mail className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />

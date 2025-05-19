@@ -12,15 +12,25 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden hero-gradient">
+      <section className="relative pt-24 md:pt-20 pb-16 md:pb-20 overflow-hidden hero-gradient">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col items-center justify-center mb-12">
+            <Image 
+              src="/logo.png"
+              alt="Med Pathway Logo"
+              width={140}
+              height={160}
+              className="mb-7"
+              priority
+            />
+            <span className="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-sm font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-600/30">
+              #1 MBBS Abroad Consultancy
+            </span>
+          </div>
           <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
             <div className="md:max-w-2xl lg:max-w-none lg:col-span-6 animate-slideUp">
               <div className="py-6">
-                <span className="inline-flex items-center rounded-full bg-blue-50 dark:bg-blue-900/30 px-3 py-1 text-sm font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-600/30 mb-4">
-                  #1 MBBS Abroad Consultancy
-                </span>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
                   Your Gateway to <span className="text-primary">Medical Education</span> Abroad
                 </h1>
