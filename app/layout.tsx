@@ -16,6 +16,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Med Pathway - MBBS Abroad Consultancy',
   description: 'Helping aspiring doctors secure hassle-free admissions in top medical universities across Uzbekistan, Russia, Kyrgyzstan, Kazakhstan, Georgia, and beyond.',
+  icons: {
+    icon: '/medpathway/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
