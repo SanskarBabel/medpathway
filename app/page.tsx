@@ -17,7 +17,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center justify-center mb-12">
             <Image 
-              src="/medpathway/logo.svg"
+              src="https://i.postimg.cc/3rPhJxvc/logo.png"
               alt="Med Pathway Logo"
               width={140}
               height={160}
