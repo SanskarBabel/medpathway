@@ -120,8 +120,8 @@ export default function Footer() {
                   </li>
                   <li>
                     <div className="flex items-center">
-                      <Mail className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0" />
-                      <Link href="mailto:info@medpathway.com" className="text-sm leading-6 text-gray-300 hover:text-white">
+                      <Mail className="h-5 w-5 text-gray-400 mr-2 flex-shrink-0 mt-1" />
+                      <Link href="mailto:info@medpathway.com" className="text-sm leading-6 text-gray-300 hover:text-white break-words max-w-[130px] sm:max-w-xs">
                         medpathway.educational@gmail.com
                       </Link>
                     </div>
