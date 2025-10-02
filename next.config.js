@@ -1,26 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/medpathway',
+  // Removed basePath to serve directly at root, avoiding GitHub Pages 404
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true
   },
-  images: { 
+  images: {
     unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
   },
-  // Add compression and optimization
+  // Generate an index.html for every route directory
+  trailingSlash: true,
+  // Enable Next.js built-in performance optimizations
   compress: true,
   swcMinify: true,
-  // Generate sitemap and robots.txt
-  trailingSlash: true,
-  // Performance optimizations
   experimental: {
     optimizeCss: true,
-    optimizePackageImports: ['lucide-react'],
-  },
+    optimizePackageImports: ['lucide-react']
+  }
 };
 
 module.exports = nextConfig;
